@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.user_info_form {
+	margin-top:20px;
+}
+.input-group {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.head_img {
+	width: 400px;
+	height: 400px;
+	margin-left: 80px;
+	margin-right: auto;
+	margin-top: 90px;
+	background-color: #C0C0C0;
+}.address_detial {
+	text-align: left;
+}

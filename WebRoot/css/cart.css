@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: summer;
+	list-style-image: none;
+	list-style-type: none;
+	text-decoration: none;
+	border-width: 0px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* [disabled]display: block; */
+	} 
+
+a a:hover{
+	display: block;
+	text-decoration: none;
+	}
+input{
+	outline:none;
+	}
+body {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	text-align: center;
+	/* [disabled]background-color: #C34042; */
+}
+.container {
+	width: 100%;
+}
+.title_line td {
+	height: 20px;
+}
+td {
+	height: 100px;
+	text-align: center;
+}
+
+.count_warpper {
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.minus_plus {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-top: 7px;
+	margin-left: 4px;
+}
+.cart_goods_count {
+	width: 50px;
+	float: left;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #999999;
+}
+.tip {
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	z-index: 100;
+	/* [disabled]color: #915758; */
+	-webkit-box-shadow: 0px 0px 8px #D2D2D2;
+	box-shadow: 0px 0px 8px #D2D2D2;
+}
+.tip_goods_name  {
+	color: #EC523F;
+	width: 350px;
+	/* [disabled]background-color: #BBA6A7; */
+	display: block;
+	height: 50px;
+	margin-left: auto;
+	margin-top: 30px;
+	line-height: 50px;
+	font-size: 16px;
+	margin-right: auto;
+}
+.add_success {
+	width: 350px;
+	height: 50px;
+	display: block;
+	line-height: 50px;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -30px;
+	margin-bottom: 35px;
+}
+.tip_confirm {
+	width: 222px;
+	height: 050px;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #EC523F;
+	color: #FBFBFB;
+}
+.tip_confirm:hover {
+	background-color: #FF0000;
+	text-decoration: none;
+	color: #FFFFFF;
+	}
+.blur {    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);    
+}

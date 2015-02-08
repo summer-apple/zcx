@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url("../webfonts/summer/stylesheet.css");
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: summer;
+	list-style-image: none;
+	list-style-type: none;
+	text-decoration: none;
+	border-width: 0px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	text-align: center;
+}
+header {
+	width: 100%;
+	height: 75px;
+	background-image: url(../img/bg/bg.png);
+	text-align: center;
+	/* [disabled]background-color: #30CC94; */
+}
+#head-box {
+	width: 1024px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	/* [disabled]background-color: #FF99CC; */
+}
+
+#logo {
+	width: 125px;
+	height: 75px;
+	float: left;
+}
+#logo a img {
+	width: 100%;
+	height: auto;
+}
+/* CSS Document */
+
+.nav-li {
+	float: left;
+	margin-left: 3%;
+	font-size: 20px;
+	margin-top: 25px;
+	color: #CCCCCC;
+}
+.nav-li a {
+	color: #FFFFFF;
+}
+.nav-li a:hover  {
+	color: #CCCCCC;
+}
+.search-box {
+	height: 75px;
+	width: 200px;
+	float: right;
+	/* [disabled]background-color: #003399; */
+	position: relative;
+}
+.search-icon {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 26px;
+	top: 25px;
+	background-image: url(../img/bg/icon32.png);
+	background-position: -26px -61px;
+	background-size: 460px auto;
+	background-repeat: no-repeat;
+}
+.search {
+	width: 150px;
+	height: 25px;
+	margin-top: 25px;
+	border-radius: 25px;
+	text-indent: 29px;
+	line-height: 15px;
+	color: #666666;
+	background-color:#CCC;
+	/*background-image: url(../img/bg/bg-black-50%25.png);*/
+}
+
+/*.search-active{
+	width: 150px;
+	height: 25px;
+	margin-top: 25px;
+	border-radius: 25px;
+	text-indent: 29px;
+	line-height: 15px;
+	color: #666666;
+	background-color:#FFF;
+	}
+
+.search:focus {
+	border-width: 0px;
+	border-style: none;
+	border-spacing: 0px 0px;
+}
+*/
+#content {
+	margin-top: 50px;
+	width: 1024px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	clear: both;
+}
+footer {
+	width: 1024px;
+	height: 100px;
+	text-align: center;
+	position: static;
+	clear: both;
+	padding-top: 60px;
+	/* [disabled]background-color: #999966; */
+	margin-left: auto;
+	margin-right: auto;
+}
+.button{
+	background-color:#30CC94;
+	color:#FFF;
+	}
+a,ul,li,label{
+	color:#000;
+	display:block;
+	}
+.white{
+	color:#FFF;
+	}
+input {
+	outline:none;
+	}

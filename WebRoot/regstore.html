@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/messages_zh.js"></script> 
+	<script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript">
+    	$().ready(function(e) {
+			
+			$(".store_form").validate({
+				
+				rules:{
+						store_name:{
+								required:true,
+								maxlength:10,
+								remote:"CheckStoreNameServlet"
+							}
+					}
+				
+				});
+			
+			
+        });
+    </script>
+<style type="text/css">
+input{outline:none;}
+.container {
+	min-width: 800px;
+	min-height: 500px;
+}
+.container .store_form {
+	width: 510px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.store_form .store_name_warper {
+	width: 400px;
+	height: 100px;
+	float: left;
+	background-color: #D67072;
+}
+.store_form .store_name_warper .store_name {
+	width: 370px;
+	height: 50px;
+	display: block;
+	line-height: 25px;
+	font-size: 18px;
+	text-indent: 15px;
+	text-align: left;
+	color: #666666;
+	margin-right: 20px;
+	border: 1px solid #999999;
+	clear: both;
+	margin-top: 0px;
+}
+.store_form .store_name_warper #store_name-error {
+	width: 300px;
+	height: 20px;
+	margin-top: 8px;
+	display: block;
+	background-color: #622627;
+	text-align: left;
+	text-indent: 10px;
+	font-size: 15px;
+	color: #FF0004;
+	clear: both;
+}
+.container .store_form .register_store_bt {
+	width: 98px;
+	height: 50px;
+	background-color: #EC523F;
+	margin-top: 2px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-style: none;
+	border-width: 0px;
+}
+.container .store_form .register_store_bt:hover {
+	background-color: #FF0000;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<form class="store_form">
+    	<div class="store_name_warper">
+    		<input type="text" class="store_name" value="撒地方">
+            <label id="store_name-error" class="error" for="store_name">必填项目！</label>
+        </div>
+        	<input type="submit" class="register_store_bt" value="注册">
+    </form>
+</div>
+</body>
+</html>

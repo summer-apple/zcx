@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>众彩行</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/store.css">
+   <!-- <link href="css/general.css" rel="stylesheet" type="text/css">-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/head.js"></script>
+</head>
+<body> 
+	<header>
+    	<img class="logo" src="img/logo_red.png">
+        
+        <div class="store_name">天天果园</div>
+        <div class="nav">
+        	<ul>
+            	<li class="nav_item"><a class="item_active" href="#">店首</a></li>
+                <li class="nav_item"><a href="#">新品</a></li>
+                <li class="nav_item"><a href="#">分类</a></li>
+                <li class="nav_item"><a href="#">独白</a></li>
+                <li class="nav_item search">
+                	<form action="SearchServlet" method="post">
+                        <input type="search" placeholder="商家、商品">
+						<input type="submit" hidden="true">
+                    </form>
+                </li>
+                <li class="nav_item"><img class="user_head img-circle" src="img/head/default.png"></li>
+                <ul class="user_opreation">
+                	<li class="operation_item"><a href="#">收藏夹</a></li>
+                    <li class="operation_item cart">
+                    	<a href="#">购物车</a>
+                    	<ul class="cart_list">	<!--the whole cart-->
+                    		<li class="cart_item">	<!--one store of the cart-->
+                            	<span class="cart_store_name">天天果园</span>		<!--store name-->
+                                <span class="cart_store_amount">582.00</span>		<!--total price in this store-->
+                                <ul class="cart_goods_list">		<!--all goods in the cart of this store-->
+                                    <li class="cart_goods_item">		<!--one goods item-->
+                                        <span class="cart_goods_head cart_goods_span"><img class="cart_goods_head_img" src="img/goods_1_1.jpg"></span>
+                             			
+                                        <span class="count_minus plus_minus cart_goods_span glyphicon glyphicon-minus-sign"></span>
+                                        <span class="cart_goods_count cart_goods_span">
+                                        	
+                                                <input type="number" class="cart_goods_count_input number_view" name="cart_goods_count" value="4">
+                                                <input type="number" class="goods_id" name="goods_id" value="${cart.goods_id}" hidden="true">
+                                                <input type="number" class="goods_price" name="goods_price" value="10" hidden="true">
+                                                <input type="number" class="cart_user" name="cart_user" value="${param.user_id}" hidden="true">
+                                           
+                                        </span>
+                                		<span class="count_plus plus_minus cart_goods_span glyphicon glyphicon-plus-sign"></span>
+                                        
+                                        <span class="one_goods_amount cart_goods_span">233.00</span>
+                                        <span class="delete_goods cart_goods_span glyphicon glyphicon-remove-circle"></span>
+                                    </li><!--cart_goods_item end-->
+                                    
+                                    <li class="cart_goods_item">		<!--one goods item-->
+                                        <span class="cart_goods_head cart_goods_span"><img class="cart_goods_head_img" src="img/goods_1_1.jpg"></span>
+                             			
+                                        <span class="count_minus plus_minus cart_goods_span glyphicon glyphicon-minus-sign"></span>
+                                        <span class="cart_goods_count cart_goods_span">
+                                        	
+                                                <input type="number" class="cart_goods_count_input number_view" name="cart_goods_count" value="1">
+                                                <input type="number" class="goods_id" name="goods_id" value="${cart.goods_id}" hidden="true">
+                                                <input type="number" class="goods_price" name="goods_price" value="10" hidden="true">
+                                                <input type="number" class="cart_user" name="cart_user" value="${param.user_id}" hidden="true">
+                                            
+                                        </span>
+                                		<span class="count_plus plus_minus cart_goods_span glyphicon glyphicon-plus-sign"></span>
+                                        
+                                        <span class="one_goods_amount cart_goods_span">52233.00</span>
+                                        <span class="delete_goods cart_goods_span glyphicon glyphicon-remove-circle"></span>
+                                    </li><!--cart_goods_item end-->
+                                    
+                                    
+                                    
+                                   
+                                </ul><!--cart_goods_list end-->
+                                
+                            </li><!--cart_item end-->
+                            
+                       
+                            
+                           
+                         	<li class="cart_item cart_amount">
+                            	<span class="total_amount">￥5000</span>
+                            	<a class="generate_order" href="#">
+                                	结 算
+                                    <span class="glyphicon glyphicon-fire"></span>
+                                </a>
+                            </li>
+                        
+                    	</ul><!-- cart_list end-->
+                    </li>
+                    	
+                    <li class="operation_item"><a href="#">订&nbsp;&nbsp;&nbsp;单</a></li>
+                    <li class="operation_item"><a href="#">资&nbsp;&nbsp;&nbsp;料</a></li>
+                    <li class="operation_item"><a href="LogoutServlet">退&nbsp;&nbsp;&nbsp;出</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <ul class="goods_list">
+    	<li class="goods_item">
+        	<img class="goods_head" src="img/goods_1_1.jpg">
+            <span class="goods-name goods_item_span">新疆阿克苏苹果</span>
+       	  <div class="goods_operate_box">
+            	<a class="goods_operate" href="#">编 辑</a>
+            	<a class="goods_operate" href="#">删 除</a>
+            </div>
+      </li>
+    </ul>
+    </main>
+    <footer>footer</footer>
+    
+
+
+
+
+            
+     
+        
+        
+
+</body>
+</html>

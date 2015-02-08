@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image: url(../img/bg.png);
+	background-repeat: repeat;
+	width: 960px;
+	height: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.register_box {
+	width: 300px;
+	height: 457px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border-radius: 27px;
+	border: 3px solid #30CC94;
+	color: undefined;
+}
+.company_name {
+	margin-top: 17px;
+	display: block;
+	width: 300px;
+	text-align: center;
+	font-size: 21px;
+	color: #1AAD78;
+	border-color: undefined;
+}
+.reg_input {
+	width: 240px;
+	height: 40px;
+	margin-top: 34px;
+	border-radius: 5px;
+	line-height: 20px;
+	text-align: left;
+	text-indent: 8px;
+	font-size: 14px;
+	color: #474747;
+}
+.register_bt {
+	width: 240px;
+	margin-top: 28px;
+	background-color: #30CC94;
+	height: 40px;
+	border-radius: 8px;
+	color: #2A2929;
+	font-size: 15px;
+}
+.log_pro {
+	width: 95px;
+	height: 19px;
+	/* [disabled]background-color: #922A2C; */
+	margin-left: 180px;
+	margin-top: 22px;
+}
+.log_pro a {
+	width: 47px;
+	float: left;
+	font-size: 14px;
+	color: #777777;
+}
+label.error{
+	width: 300px;
+	height: 0px;
+	display: block;
+	color: #FF3333;
+	font-size: 14px;
+	line-height: 23px;
+	text-indent: 29px;
+	text-align: left;
+	}
